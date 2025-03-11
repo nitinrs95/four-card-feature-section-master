@@ -47,9 +47,8 @@ Users should be able to:
 - #### Grid Layout
   I gained a basic understanding of grid layouts and also learned about naming grid areas and their practical applications.
 
-````css
+```css
 grid-template-areas:
-        "left centre-top right"
-        "left centre-bottom right";
-        ```
-````
+  "left centre-top right"
+  "left centre-bottom right";
+```
