@@ -27,14 +27,28 @@
 
   &__supervisor {
     border-top: a.$color-cyan 4px solid;
+    @include a.respond(desktop) {
+      grid-area: left;
+      align-self: center;
+    }
   }
   &__team-builder {
     border-top: a.$color-red 4px solid;
+    @include a.respond(desktop) {
+      grid-area: centre-top;
+    }
   }
   &__karma {
     border-top: a.$color-yellow 4px solid;
+    @include a.respond(desktop) {
+      grid-area: centre-bottom;
+    }
   }
   &__calculator {
     border-top: a.$color-blue 4px solid;
+    @include a.respond(desktop) {
+      grid-area: right;
+      align-self: center;
+    }
   }
 }

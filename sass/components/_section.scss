@@ -9,6 +9,11 @@
   padding: 25px;
   gap: 2rem;
   margin-top: 50px;
+  width: 37.5rem;
+  margin: 0 auto;
+  @include a.respond(desktop) {
+    width: 110rem;
+  }
 
   &__heading {
     font-size: 2.4rem;
@@ -21,17 +26,29 @@
     font-weight: a.$font-weight-regular;
     @include a.color-opacity;
     letter-spacing: 0.1px;
+    @include a.respond(desktop) {
+      padding: 0 27rem;
+    }
   }
 
   &__card-container {
+    // flex: 1;
+    width: 100%;
     display: grid;
     gap: 2.5rem;
     margin-top: 50px;
+
+    @include a.respond(desktop) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "left centre-top right"
+        "left centre-bottom right";
+    }
   }
 }
 
 span {
-  display: inline-block;
+  display: block;
   font-weight: a.$font-weight-semi-bold;
   margin-top: 1.6px;
 }
