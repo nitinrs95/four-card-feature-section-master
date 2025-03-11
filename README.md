@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/nitinrs95/four-card-feature-section-master.git)
-- Live Site URL: [Product Preview Card Component Page](https://nitinrs95.github.io/four-card-feature-section-master/)
+- Live Site URL: [Four Card Feature Section Page](https://nitinrs95.github.io/four-card-feature-section-master/)
 
 ## My process
 
