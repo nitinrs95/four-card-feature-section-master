@@ -16,4 +16,7 @@ body {
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
   color: a.$color-grey;
+  @include a.respond(desktop) {
+    min-width: 144rem;
+  }
 }

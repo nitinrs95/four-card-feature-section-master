@@ -15,6 +15,11 @@ body {
   font-family: "poppins", sans-serif;
   color: #4d4f62;
 }
+@media only screen and (min-width: 56.25em) {
+  body {
+    min-width: 144rem;
+  }
+}
 
 .section {
   display: flex;
@@ -28,9 +33,11 @@ body {
   width: 37.5rem;
   margin: 0 auto;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .section {
     width: 110rem;
+    height: 100vh;
+    margin-top: 0;
   }
 }
 .section__heading {
@@ -38,13 +45,18 @@ body {
   font-weight: 200;
   letter-spacing: 0.17px;
 }
+@media only screen and (min-width: 56.25em) {
+  .section__heading {
+    font-size: 3.6rem;
+  }
+}
 .section__summary {
   font-size: 1.5rem;
   font-weight: 400;
   color: rgba(77, 79, 98, 0.5);
   letter-spacing: 0.1px;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .section__summary {
     padding: 0 27rem;
   }
@@ -55,7 +67,7 @@ body {
   gap: 2.5rem;
   margin-top: 50px;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .section__card-container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "left centre-top right" "left centre-bottom right";
@@ -95,7 +107,7 @@ span {
 .card__supervisor {
   border-top: #44d3d2 4px solid;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .card__supervisor {
     grid-area: left;
     align-self: center;
@@ -104,7 +116,7 @@ span {
 .card__team-builder {
   border-top: #ea5454 4px solid;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .card__team-builder {
     grid-area: centre-top;
   }
@@ -112,7 +124,7 @@ span {
 .card__karma {
   border-top: #fcae4a 4px solid;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .card__karma {
     grid-area: centre-bottom;
   }
@@ -120,7 +132,7 @@ span {
 .card__calculator {
   border-top: #549ef2 4px solid;
 }
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 56.25em) {
   .card__calculator {
     grid-area: right;
     align-self: center;
