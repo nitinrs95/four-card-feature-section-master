@@ -1,0 +1,5 @@
+@use "./variables" as v;
+
+@mixin color-opacity {
+  color: rgba(v.$color-grey, 0.5);
+}
